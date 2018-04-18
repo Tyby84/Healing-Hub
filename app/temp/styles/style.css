@@ -340,3 +340,43 @@ template {
 [hidden] {
   display: none;
 }
+
+* {box-sizing: border-box;}
+
+body{
+    background-color: #222;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    
+    position: relative;
+    
+    
+}
+
+.nav {
+	display: none;
+     
+}
+
+@media (min-width: 800px) {
+
+.nav {
+    display: flex;
+    background-color: #8C078C;
+    justify-content: flex-center
+     
+}
+	}
+
+a{
+    margin-right: 2rem;
+}
+
+

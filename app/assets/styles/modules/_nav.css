@@ -1,0 +1,12 @@
+.nav {
+	display: none;
+	@mixin medium {
+    display: flex;
+    background-color: $main;
+    justify-content: flex-center;
+    }
+     
+}
+a{
+    margin-right: 2rem;
+}
