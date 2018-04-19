@@ -2,11 +2,17 @@
 	display: none;
 	@mixin medium {
     display: flex;
-    background-color: $main;
+    margin-top: 3rem;
+    align-items:center;
     justify-content: flex-center;
     }
      
-}
-a{
-    margin-right: 2rem;
+    a{ 
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        color: $main;
+        padding: .5rem;
+    }
 }
