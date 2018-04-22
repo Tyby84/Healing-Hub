@@ -2,7 +2,7 @@
 	display: none;
 	@mixin medium {
     display: flex;
-    margin-top: 3rem;
+    padding-top: 3rem;
     align-items:center;
     justify-content: flex-center;
     }
@@ -11,7 +11,7 @@
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         margin-right: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: $main;
         padding: .5rem;
     }

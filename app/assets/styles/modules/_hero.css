@@ -1,22 +1,63 @@
 .hero {
+	  position: relative;
+		background-color: #222;
+    min-height: 600px;
+    background: url('../../assets/images/spa-640x426.jpg') center center no-repeat;
+    @mixin bgeffect;
+    
+    @mixin medium {
+      background: url('../../assets/images/spa-1280x853.jpg') center center no-repeat;
+      @mixin bgeffect;
+      }
+    @mixin large {
+      background: url('../../assets/images/spa-1920x1280.jpg') center center no-repeat;
+      @mixin bgeffect;
+    }
+
    &__text{
-       width: 30rem;
-      margin: 5rem auto;
-      color: #eee;
-      text-align: center;
-      
+        
+        position: absolute;
+        
+        width: 100%;
+        color: #eee;
+        text-align: center;
+       @mixin medium {
+         position: relative;
+        width: 30rem;
+        margin: 5rem auto;
+       }    
 
       &__title{
+		  
         font-size: 3rem;
         border-top: 3px solid $main;
         border-bottom: 3px solid $main;
         padding: 2rem;
         font-family: 'Lora', serif;
+		opacity: 0;
+		animation-name: fadeText;
+		  animation-delay: 1s;
+		  animation-duration: 2s;
+		  animation-fill-mode: forwards;
+		  animation-timing-function: ease-in-out;
       }
       &__subtitle{
+		  
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
+		opacity: 0;
+		  animation-name: fadeText;
+		  animation-delay: 1.5s;
+		  animation-duration: 2s;
+		  animation-fill-mode: forwards;
+		  animation-timing-function: ease-in-out;
+		 
       }
    }
 
+}
+@keyframes fadeText {
+	100%{
+		opacity: 1;
+	}
 }
