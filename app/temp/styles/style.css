@@ -354,7 +354,7 @@ img {
 }
 
 a{
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 
@@ -380,7 +380,7 @@ a{
 .hero {
 	  position: relative;
 		background-color: #222;
-    min-height: 600px;
+    height: 100vh;
     background: url('../../assets/images/spa-640x426.jpg') center center no-repeat;
     background-color: #222;
     background-blend-mode: overlay;
@@ -455,8 +455,8 @@ a{
 		opacity: 0;
 		  -webkit-animation-name: fadeText;
 		          animation-name: fadeText;
-		  -webkit-animation-delay: 1.5s;
-		          animation-delay: 1.5s;
+		  -webkit-animation-delay: 2s;
+		          animation-delay: 2s;
 		  -webkit-animation-duration: 2s;
 		          animation-duration: 2s;
 		  -webkit-animation-fill-mode: forwards;
@@ -480,25 +480,82 @@ a{
 
 .nav {
 	display: none;
+	
 }
 
 @media (min-width: 800px) {
 
 .nav {
+	opacity: 0;
     display: flex;
     padding-top: 3rem;
+	margin-bottom: 2rem;
     align-items:center;
-    justify-content: flex-center
+    justify-content: flex-center;
+	-webkit-animation-name: fadeNav;
+	        animation-name: fadeNav;
+	-webkit-animation-delay: 3s;
+	        animation-delay: 3s;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards
+	
 }
 	}
 
-.nav a{ 
+.nav a { 
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         margin-right: 2rem;
         font-size: 1.4rem;
         color: #8C078C;
         padding: .5rem;
+		position: relative;
     }
+
+.list::before{
+	content:'';
+	display: inline-block;
+	position: absolute;
+	top: -10px;
+	left:50%;
+	width: 10px;
+	height: 10px;
+	background-color: #8C078C;
+	border-radius: 50%;
+	color: #fff;
+}
+
+@-webkit-keyframes fadeNav{
+	100%{
+		opacity: 1;
+		
+	}
+}
+
+@keyframes fadeNav{
+	100%{
+		opacity: 1;
+		
+	}
+}
+
+.arrdown {
+	width: 1rem;
+	height: 1rem;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	position: absolute;
+	top: 80vh;
+	left: 50vw;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	padding: 1rem;
+	border: 1px solid #222;
+	border-radius: 50%;
+}
 
 

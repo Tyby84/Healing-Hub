@@ -8,7 +8,7 @@ img {
     height: auto;
 }
 a{
-    display: inline-block;
+    display: block;
     text-decoration: none;
 }
 .flex{

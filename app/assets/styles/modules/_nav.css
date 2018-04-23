@@ -1,18 +1,48 @@
 .nav {
 	display: none;
+	
 	@mixin medium {
+	opacity: 0;
     display: flex;
     padding-top: 3rem;
+	margin-bottom: 2rem;
     align-items:center;
     justify-content: flex-center;
+	animation-name: fadeNav;
+	animation-delay: 3s;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
     }
      
-    a{ 
+    a { 
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         margin-right: 2rem;
         font-size: 1.4rem;
         color: $main;
         padding: .5rem;
+		position: relative;
     }
+	
+}
+.list::before{
+	content:'';
+	display: inline-block;
+	position: absolute;
+	top: -10px;
+	left:50%;
+	width: 10px;
+	height: 10px;
+	background-color: $main;
+	border-radius: 50%;
+	color: #fff;
+}
+
+
+@keyframes fadeNav{
+	100%{
+		opacity: 1;
+		
+	}
 }
