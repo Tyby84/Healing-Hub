@@ -1,11 +1,10 @@
 * {box-sizing: border-box;}
 body{
-    background-color: #222;
+    background-color: #c3c3c3;
 }
 img {
     display: block;
-    width: 100%;
-    height: auto;
+    
 }
 a{
     display: block;

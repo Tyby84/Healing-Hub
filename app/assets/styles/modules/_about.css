@@ -1,0 +1,42 @@
+.about{
+	background: url('../../assets/images/beac1920x1280.jpg') center 30% no-repeat;
+	background-size: cover;
+	height: 100vh;
+	@mixin bgeffect-light;
+	&__title {
+		width: 10rem;
+		margin: 0 auto 1rem auto;
+		padding-top: 1rem;
+		text-align: center;
+		font-family: 'Lora', serif;
+		font-weight: 400;
+		color: $main;
+	}
+	
+	&__desc {
+		padding: 1rem;
+		margin: 1rem auto;
+		line-height: 1.5;
+		background-color: rgba(0,0,0,.5);
+		color: #eee;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2rem;
+        font-weight: 500;
+		text-align: justify;
+		box-shadow: 2px 2px 4px #222;
+		@mixin medium{
+			width: 50vw;
+		}
+	}
+	&__img {
+		position: relative;
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 1rem;
+		}
+		
+	
+}
