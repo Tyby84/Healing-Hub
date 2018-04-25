@@ -1,7 +1,5 @@
 .nav {
-	display: none;
 	
-	@mixin medium {
 	opacity: 0;
     display: flex;
     padding-top: 3rem;
@@ -13,9 +11,11 @@
 	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-    }
+   
      
     a { 
+		margin-right: 1.2rem;
+		@mixin medium{
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         margin-right: 2rem;
@@ -23,13 +23,17 @@
         color: $main;
         padding: .5rem;
 		position: relative;
+		}
     }
 	
 }
 .list::before{
+	position: absolute;
+	top: 3.5rem;
+	@mixin medium{
 	content:'';
 	display: inline-block;
-	position: absolute;
+	
 	top: 2.5rem;
 	left:50%;
 	width: 10px;
@@ -37,6 +41,7 @@
 	background-color: $main;
 	border-radius: 50%;
 	color: #fff;
+	}
 }
 
 

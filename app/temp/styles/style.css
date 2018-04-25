@@ -478,13 +478,7 @@ a{
 }
 
 .nav {
-	display: none;
 	
-}
-
-@media (min-width: 800px) {
-
-.nav {
 	opacity: 0;
     display: flex;
     padding-top: 3rem;
@@ -500,33 +494,47 @@ a{
 	-webkit-animation-timing-function: ease-in-out;
 	        animation-timing-function: ease-in-out;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards
+	        animation-fill-mode: forwards;
 	
 }
-	}
 
 .nav a { 
+		margin-right: 1.2rem;
+    }
+
+@media (min-width: 800px) {
+
+.nav a {
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         margin-right: 2rem;
         font-size: 1.4rem;
         color: #8C078C;
         padding: .5rem;
-		position: relative;
+		position: relative
     }
+	}
+
+.list::before{
+	position: absolute;
+	top: 3.5rem;
+}
+
+@media (min-width: 800px) {
 
 .list::before{
 	content:'';
 	display: inline-block;
-	position: absolute;
+	
 	top: 2.5rem;
 	left:50%;
 	width: 10px;
 	height: 10px;
 	background-color: #8C078C;
 	border-radius: 50%;
-	color: #fff;
+	color: #fff
 }
+	}
 
 @-webkit-keyframes fadeNav{
 	100%{
@@ -555,10 +563,15 @@ a{
 	padding: 1.2rem;
 	border: 2px solid #eee;
 	border-radius: 50%;
+}
+
+@media (min-width: 800px) {
+
+.arrdown {
 	-webkit-animation-name: arrow;
 	        animation-name: arrow;
-	-webkit-animation-delay: 2s;
-	        animation-delay: 2s;
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
 	-webkit-animation-duration: 4s;
 	        animation-duration: 4s;
 	-webkit-animation-direction: alternate;
@@ -566,10 +579,12 @@ a{
 	-webkit-animation-timing-function: ease-in-out;
 	        animation-timing-function: ease-in-out;
 	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite;
+	        animation-iteration-count: infinite
 }
+	}
 
 @-webkit-keyframes arrow {
+	
 		100%{
 		top: 77vh;
 		-webkit-transform: translate(-50%,-50%);
@@ -578,6 +593,7 @@ a{
 }
 
 @keyframes arrow {
+	
 		100%{
 		top: 77vh;
 		-webkit-transform: translate(-50%,-50%);
@@ -598,13 +614,25 @@ a{
 .about{
 	background: url('../../assets/images/beac1920x1280.jpg') center 30% no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: auto;
+	
 	background-color: #6a6a6a;
+	
 	background-blend-mode: overlay;
+	
 	background-size: cover;
 		
 	
 }
+
+@media (min-width: 800px) {
+
+.about{
+		height: 100vh
+		
+	
+}
+	}
 
 .about__title {
 		width: 10rem;
@@ -624,37 +652,58 @@ a{
 		color: #eee;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1.2rem;
-        font-weight: 500;
-		text-align: justify;
+        font-weight: 400;
+		text-align: center;
 		box-shadow: 2px 2px 4px #222;
+		
 	}
 
 @media (min-width: 800px) {
 
 .about__desc {
 			width: 50vw
+		
 	}
 	}
 
+.about__desc__title {
+			font-family: 'Lora', serif;
+		}
+
 .about__img {
-		position: relative;
+			position: relative;
 			width: 150px;
 			height: 150px;
+			border: 5px solid rgba(92, 92, 92, 0.25);
 			border-radius: 50%;
 			left: 50%;
 			-webkit-transform: translateX(-50%);
 			        transform: translateX(-50%);
 			margin-top: 1rem;
+			margin-bottom: 2rem;
 		}
 
 .hr{
 	color: #8C078C;
+	
 }
 
 .hr--small{
-		width: 0rem;
 		-webkit-animation-name: hrSmall;
 		        animation-name: hrSmall;
+		width: 0rem;
+		-webkit-animation-delay: 1s;
+		        animation-delay: 1s;
+		-webkit-animation-duration: 2s;
+		        animation-duration: 2s;
+		-webkit-animation-fill-mode: forwards;
+		        animation-fill-mode: forwards;
+	}
+
+.hr--medium{
+		-webkit-animation-name: hrMed;
+		        animation-name: hrMed;
+		width: 0rem;
 		-webkit-animation-delay: 1s;
 		        animation-delay: 1s;
 		-webkit-animation-duration: 2s;
@@ -672,6 +721,20 @@ a{
 @keyframes hrSmall {
 	100%{
 		width: 10rem;
+	}
+}
+
+@-webkit-keyframes hrMed {
+	100%{
+		width: 15rem;
+		
+	}
+}
+
+@keyframes hrMed {
+	100%{
+		width: 15rem;
+		
 	}
 }
 

@@ -10,14 +10,17 @@
 	padding: 1.2rem;
 	border: 2px solid #eee;
 	border-radius: 50%;
+	@mixin medium{
 	animation-name: arrow;
-	animation-delay: 2s;
+	animation-delay: 4s;
 	animation-duration: 4s;
 	animation-direction: alternate;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
+	}
 }
 @keyframes arrow {
+	
 		100%{
 		top: 77vh;
 		transform: translate(-50%,-50%);

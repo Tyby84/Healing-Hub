@@ -2,15 +2,25 @@
 	color: $main;
 	
 	&--small{
-		width: 0rem;
 		animation-name: hrSmall;
-		animation-delay: 1s;
-		animation-duration: 2s;
-		animation-fill-mode: forwards;
+		@mixin hrAnim;
 	}
+	&--medium{
+		animation-name: hrMed;
+		@mixin hrAnim;
+	}
+	
 }
+
 @keyframes hrSmall {
 	100%{
 		width: 10rem;
+	}
+}
+
+@keyframes hrMed {
+	100%{
+		width: 15rem;
+		
 	}
 }

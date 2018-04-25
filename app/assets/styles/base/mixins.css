@@ -27,3 +27,10 @@
 	background-blend-mode: overlay;
 	background-size: cover;
 }
+
+@define-mixin hrAnim{
+		width: 0rem;
+		animation-delay: 1s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+}
