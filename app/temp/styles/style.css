@@ -553,7 +553,6 @@ a{
 .arrdown {
 	width: 1.3rem;
 	height: 1.2rem;
-	/*background-color: rgba($main,0.5);*/
 	color: #fff;
 	position: absolute;
 	top: 80vh;
@@ -568,6 +567,7 @@ a{
 @media (min-width: 800px) {
 
 .arrdown {
+	opacity: 0;
 	-webkit-animation-name: arrow;
 	        animation-name: arrow;
 	-webkit-animation-delay: 4s;
@@ -585,7 +585,8 @@ a{
 
 @-webkit-keyframes arrow {
 	
-		100%{
+	100%{
+		opacity: 1;
 		top: 77vh;
 		-webkit-transform: translate(-50%,-50%);
 		        transform: translate(-50%,-50%);
@@ -594,7 +595,8 @@ a{
 
 @keyframes arrow {
 	
-		100%{
+	100%{
+		opacity: 1;
 		top: 77vh;
 		-webkit-transform: translate(-50%,-50%);
 		        transform: translate(-50%,-50%);
