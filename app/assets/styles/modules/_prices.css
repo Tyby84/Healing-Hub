@@ -1,0 +1,8 @@
+.prices{
+	position: relative;
+	height: 100vh;
+	background: url('../../assets/images/shells1920x1280.jpg') center center no-repeat;
+	background-size: cover;
+	margin-top: -1.5rem;
+	@mixin bgeffect;
+}
