@@ -8,14 +8,22 @@
 	@mixin bgeffect;
 	
 	.mainService{
-		width: 50vw;
+		width: 90vw;
 		color: #eee;
 		text-align: center;
 		margin: 4rem auto 0 auto;
 		background: rgba($main, .3);
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding: 1rem;
+		
 		border-radius: 1rem;
+		@mixin medium {
+			width: 70vw;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		@mixin large {
+			width: 50vw;
+		}
 		
 		&__title{
 			text-transform: capitalize;

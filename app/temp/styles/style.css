@@ -753,14 +753,30 @@ a{
 }
 
 .prices .mainService{
-		width: 50vw;
+		width: 90vw;
 		color: #eee;
 		text-align: center;
 		margin: 4rem auto 0 auto;
 		background: rgba(62,115,168, .3);
-		padding-top: 1rem;
-		padding-bottom: 1rem;
+		padding: 1rem;
+		
 		border-radius: 1rem;
+	}
+
+@media (min-width: 800px) {
+
+.prices .mainService{
+			width: 70vw;
+			padding-top: 1rem;
+			padding-bottom: 1rem
+	}
+	}
+
+@media (min-width: 1200px) {
+
+.prices .mainService{
+			width: 50vw
+	}
 	}
 
 .prices .mainService__title{
