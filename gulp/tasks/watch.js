@@ -26,9 +26,9 @@ let gulp = require('gulp'),
 			gulp.start('cssInject');
 		});
 	
-		// watch('./app/assets/scripts/**/*.js', function() {
-		// 	gulp.start('scriptsRefresh');
-		// });
+		 watch('./app/assets/scripts/**/*.js', function() {
+		 	gulp.start('scriptsRefresh');
+		 });
 			
 		});
 
@@ -59,12 +59,12 @@ gulp.task('scripts', function(callback) {
 	});
 });
 
-//   gulp.task('scripts', function(callback) {
-// 	webpack(require('../../webpack.config.js'), function(err, stats) {
-// 		if (err) {
-// 			console.log(err.toString());
-// 		}
-// 		console.log(stats.toString());
-// 		callback();
-// 	});
-// });
+   gulp.task('scripts', function(callback) {
+ 	webpack(require('../../webpack.config.js'), function(err, stats) {
+ 		if (err) {
+ 			console.log(err.toString());
+ 		}
+ 		console.log(stats.toString());
+ 		callback();
+ 	});
+ });
