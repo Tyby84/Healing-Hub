@@ -430,8 +430,8 @@ a{
 .hero__text__title{
 		  
         font-size: 3rem;
-        border-top: 3px solid #8C078C;
-        border-bottom: 3px solid #8C078C;
+        border-top: 3px solid #3e73a8;
+        border-bottom: 3px solid #3e73a8;
         padding: 2rem;
         font-family: 'Lora', serif;
 		opacity: 0;
@@ -509,7 +509,7 @@ a{
         font-weight: 300;
         margin-right: 2rem;
         font-size: 1.4rem;
-        color: #8C078C;
+        color: #3e73a8;
         padding: .5rem;
 		position: relative
     }
@@ -530,7 +530,7 @@ a{
 	left:50%;
 	width: 10px;
 	height: 10px;
-	background-color: #8C078C;
+	background-color: #3e73a8;
 	border-radius: 50%;
 	color: #fff
 }
@@ -643,7 +643,7 @@ a{
 		text-align: center;
 		font-family: 'Lora', serif;
 		font-weight: 400;
-		color: #8C078C;
+		color: #3e73a8;
 	}
 
 .about__desc {
@@ -656,7 +656,7 @@ a{
 		font-size: 1.2rem;
         font-weight: 400;
 		text-align: center;
-		box-shadow: 2px 2px 4px #222;
+		border-radius: 1rem;
 		
 	}
 
@@ -686,7 +686,7 @@ a{
 		}
 
 .hr{
-	color: #8C078C;
+	color: #3e73a8;
 	
 }
 
@@ -741,6 +741,7 @@ a{
 }
 
 .prices{
+	
 	position: relative;
 	height: 100vh;
 	background: url('../../assets/images/shells1920x1280.jpg') center center no-repeat;
@@ -750,5 +751,36 @@ a{
 	background-blend-mode: overlay;
 	background-size: cover;
 }
+
+.prices .mainService{
+		width: 50vw;
+		color: #eee;
+		text-align: center;
+		margin: 4rem auto 0 auto;
+		background: rgba(62,115,168, .3);
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 1rem;
+	}
+
+.prices .mainService__title{
+			text-transform: capitalize;
+			letter-spacing: 1px;
+		}
+
+.prices span{
+		color: #3e73a8;
+		font-size: 1.5rem;
+	}
+
+.prices__title {
+		width: 10rem;
+		margin: 0 auto 1rem auto;
+		padding-top: 1rem;
+		text-align: center;
+		font-family: 'Lora', serif;
+		font-weight: 400;
+		color: #3e73a8;
+	}
 
 

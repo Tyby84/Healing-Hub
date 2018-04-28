@@ -1,8 +1,34 @@
 .prices{
+	
 	position: relative;
 	height: 100vh;
 	background: url('../../assets/images/shells1920x1280.jpg') center center no-repeat;
 	background-size: cover;
 	margin-top: -1.5rem;
 	@mixin bgeffect;
+	
+	.mainService{
+		width: 50vw;
+		color: #eee;
+		text-align: center;
+		margin: 4rem auto 0 auto;
+		background: rgba($main, .3);
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		border-radius: 1rem;
+		
+		&__title{
+			text-transform: capitalize;
+			letter-spacing: 1px;
+		}
+	}
+	
+	span{
+		color: $main;
+		font-size: 1.5rem;
+	}
+	
+	&__title {
+		@mixin secTitle;
+	}
 }

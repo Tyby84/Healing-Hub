@@ -34,3 +34,13 @@
 		animation-duration: 2s;
 		animation-fill-mode: forwards;
 }
+
+@define-mixin secTitle{
+	width: 10rem;
+		margin: 0 auto 1rem auto;
+		padding-top: 1rem;
+		text-align: center;
+		font-family: 'Lora', serif;
+		font-weight: 400;
+		color: $main;
+}

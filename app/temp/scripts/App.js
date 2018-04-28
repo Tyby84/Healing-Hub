@@ -88,14 +88,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 (0, _jquery2.default)(document).ready(function () {
 
 	_jquery2.default.getJSON('../../assets/json/prices.json', function (data) {
-		console.log(data);
-		_jquery2.default.each(data, function (key, val) {
-			console.log('key', key);
-			var ar = key;
-			var arak = val;
-			console.log('ar', ar);
-			(0, _jquery2.default)('#mainPrice').append(ar);
-		});
+
+		var min60 = data["60min"];
+		var min90 = data["90min"];
+		var min120 = data["120min"];
+
+		(0, _jquery2.default)('span.60min').append(min60);
+		(0, _jquery2.default)('span.90min').append(min90);
+		(0, _jquery2.default)('span.120min').append(min120);
 	});
 });
 
