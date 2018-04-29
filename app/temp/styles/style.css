@@ -799,4 +799,38 @@ a{
 		color: #3e73a8;
 	}
 
+.mastypes__title {
+		width: 10rem;
+		margin: 0 auto 1rem auto;
+		padding-top: 1rem;
+		text-align: center;
+		font-family: 'Lora', serif;
+		font-weight: 400;
+		color: #3e73a8;
+	}
+
+.mastypes__boxes {
+		display: flex;
+		
+	}
+
+.mastypes__box{
+		height: 100px;
+		background-color: #1a2a83;
+		flex-grow: 1;
+		border: 1px solid #000;
+		color: #eee;
+		margin: 1rem auto;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.1rem;
+        font-weight: 400;
+		cursor: pointer;
+		transition: background .5s ease-out;
+	}
+
+.mastypes__box:hover {
+			background-color: #222;
+		}
+
 

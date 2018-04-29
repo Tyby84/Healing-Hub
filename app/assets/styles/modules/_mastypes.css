@@ -1,0 +1,30 @@
+.mastypes{
+	
+	&__title {
+		@mixin secTitle;
+	}
+	
+	&__boxes {
+		display: flex;
+		
+	}
+	
+	&__box{
+		height: 100px;
+		background-color: #1a2a83;
+		flex-grow: 1;
+		border: 1px solid #000;
+		color: #eee;
+		margin: 1rem auto;
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.1rem;
+        font-weight: 400;
+		cursor: pointer;
+		transition: background .5s ease-out;
+		
+		&:hover {
+			background-color: #222;
+		}
+	}
+}
