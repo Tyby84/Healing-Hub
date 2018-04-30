@@ -637,7 +637,7 @@ a{
 	}
 
 .about__title {
-		width: 10rem;
+		width: 30vw;
 		margin: 0 auto 1rem auto;
 		padding-top: 1rem;
 		text-align: center;
@@ -790,7 +790,7 @@ a{
 	}
 
 .prices__title {
-		width: 10rem;
+		width: 30vw;
 		margin: 0 auto 1rem auto;
 		padding-top: 1rem;
 		text-align: center;
@@ -799,8 +799,12 @@ a{
 		color: #3e73a8;
 	}
 
+.mastypes{
+	height: 100vh;
+}
+
 .mastypes__title {
-		width: 10rem;
+		width: 30vw;
 		margin: 0 auto 1rem auto;
 		padding-top: 1rem;
 		text-align: center;
@@ -818,7 +822,7 @@ a{
 		height: 100px;
 		background-color: #1a2a83;
 		flex-grow: 1;
-		border: 1px solid #000;
+		border-left: 1px solid #d8d8d8;
 		color: #eee;
 		margin: 1rem auto;
 		text-align: center;
@@ -826,11 +830,31 @@ a{
 		font-size: 1.1rem;
         font-weight: 400;
 		cursor: pointer;
-		transition: background .5s ease-out;
+		transition: background .3s ease-out;
 	}
 
 .mastypes__box:hover {
-			background-color: #222;
+			background-color: rgba(62,115,168, .8);
 		}
+
+.mastypes__inload{
+		width: 60vw;
+		height: 50vh;
+		
+		margin: 1rem auto;
+		border: 1px solid #333;
+	}
+
+.mastypes__inload__par {
+			padding: 0 2rem;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.2rem;
+        	font-weight: 300;
+			line-height: 1.4;
+		}
+
+.mastypes--active {
+		background-color: rgba(62,115,168, .8);
+	}
 
 

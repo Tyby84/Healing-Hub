@@ -15,5 +15,14 @@ $(document).ready(function(){
 		
 		
 	});
+	
+	//Loading massage types
+	$('.mastypes__box').click(function() {
+		$('.mastypes__box').removeClass('mastypes--active');
+		$(this).addClass('mastypes--active');
+		let box = $(this).attr('id');
+		//console.log(box);
+		$('.mastypes__inload__par').load('/assets/txt/' + box + '.txt');
+	});
 
 });

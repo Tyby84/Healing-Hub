@@ -36,7 +36,7 @@
 }
 
 @define-mixin secTitle{
-	width: 10rem;
+		width: 30vw;
 		margin: 0 auto 1rem auto;
 		padding-top: 1rem;
 		text-align: center;

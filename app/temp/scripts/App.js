@@ -97,6 +97,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		(0, _jquery2.default)('span.90min').append(min90);
 		(0, _jquery2.default)('span.120min').append(min120);
 	});
+
+	//Loading massage types
+	(0, _jquery2.default)('.mastypes__box').click(function () {
+		(0, _jquery2.default)('.mastypes__box').removeClass('mastypes--active');
+		(0, _jquery2.default)(this).addClass('mastypes--active');
+		var box = (0, _jquery2.default)(this).attr('id');
+		//console.log(box);
+		(0, _jquery2.default)('.mastypes__inload__par').load('/assets/txt/' + box + '.txt');
+	});
 });
 
 /***/ }),
