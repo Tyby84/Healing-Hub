@@ -1,22 +1,24 @@
 .mastypes{
 	height: 100vh;
+	
 	&__title {
 		@mixin secTitle;
 	}
 	
 	&__boxes {
 		display: flex;
-		
+		flex-direction: column;
+		float: left;
+		margin-top: 1rem;
 	}
 	
 	&__box{
-		height: 100px;
+		height: 60px;
 		background-color: #1a2a83;
-		flex-grow: 1;
-		border-left: 1px solid #d8d8d8;
+		width: 300px;
+		margin-left: 1rem;
+		border-bottom: 3px solid #d8d8d8;
 		color: #eee;
-		margin: 1rem auto;
-		
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1.1rem;
@@ -24,20 +26,21 @@
 		cursor: pointer;
 		transition: background .3s ease-out;
 		
+		&:last-child{
+			border:none;
+		}
 		&:hover {
 			background-color: rgba($main, .8);
 		}
 	}
 	
 	&__inload{
+		float: right;
 		width: 60vw;
 		height: auto;
-		margin: 1rem auto;
-		border: 1px solid #333;
+		margin: 1rem 2rem auto 0;
+		/*border: 1px solid #333;*/
 		transition: all .6s ease-out;
-		&--active{
-			height: auto;
-		}
 		
 		&__par {
 			padding: 0 2rem;

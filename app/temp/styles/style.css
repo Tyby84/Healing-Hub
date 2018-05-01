@@ -815,17 +815,18 @@ a{
 
 .mastypes__boxes {
 		display: flex;
-		
+		flex-direction: column;
+		float: left;
+		margin-top: 1rem;
 	}
 
 .mastypes__box{
-		height: 100px;
+		height: 60px;
 		background-color: #1a2a83;
-		flex-grow: 1;
-		border-left: 1px solid #d8d8d8;
+		width: 300px;
+		margin-left: 1rem;
+		border-bottom: 3px solid #d8d8d8;
 		color: #eee;
-		margin: 1rem auto;
-		
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1.1rem;
@@ -834,21 +835,22 @@ a{
 		transition: background .3s ease-out;
 	}
 
+.mastypes__box:last-child{
+			border:none;
+		}
+
 .mastypes__box:hover {
 			background-color: rgba(62,115,168, .8);
 		}
 
 .mastypes__inload{
+		float: right;
 		width: 60vw;
 		height: auto;
-		margin: 1rem auto;
-		border: 1px solid #333;
+		margin: 1rem 2rem auto 0;
+		/*border: 1px solid #333;*/
 		transition: all .6s ease-out;
 	}
-
-.mastypes__inload--active{
-			height: auto;
-		}
 
 .mastypes__inload__par {
 			padding: 0 2rem;
