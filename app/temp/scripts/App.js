@@ -101,10 +101,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	//Loading massage types
 	(0, _jquery2.default)('.mastypes__box').click(function () {
 		(0, _jquery2.default)('.mastypes__box').removeClass('mastypes--active');
-		(0, _jquery2.default)(this).addClass('mastypes--active');
+
+		(0, _jquery2.default)(this).addClass('mastypes__inload--active');
 		var box = (0, _jquery2.default)(this).attr('id');
 		//console.log(box);
-		(0, _jquery2.default)('.mastypes__inload__par').load('/assets/txt/' + box + '.txt');
+		(0, _jquery2.default)('.mastypes__inload__par').load('/assets/txt/' + box + '.txt').hide().fadeTo(1000, 1);
 	});
 });
 

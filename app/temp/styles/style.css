@@ -825,6 +825,7 @@ a{
 		border-left: 1px solid #d8d8d8;
 		color: #eee;
 		margin: 1rem auto;
+		
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
 		font-size: 1.1rem;
@@ -839,11 +840,15 @@ a{
 
 .mastypes__inload{
 		width: 60vw;
-		height: 50vh;
-		
+		height: auto;
 		margin: 1rem auto;
 		border: 1px solid #333;
+		transition: all .6s ease-out;
 	}
+
+.mastypes__inload--active{
+			height: auto;
+		}
 
 .mastypes__inload__par {
 			padding: 0 2rem;
