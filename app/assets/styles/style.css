@@ -1,7 +1,8 @@
 @import 'normalize.css';
+@import './base/mixins';
 @import './base/global';
 @import './base/variables';
-@import './base/mixins';
+
 @import './modules/_hero';
 @import './modules/_nav';
 @import './modules/_arrow';

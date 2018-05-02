@@ -2,10 +2,20 @@
 	
 	position: relative;
 	height: 100vh;
-	background: url('../../assets/images/shells1920x1280.jpg') center center no-repeat;
+	background: url('../../assets/images/shell640x426.jpg') center top no-repeat;
 	background-size: cover;
-	
 	@mixin bgeffect;
+	@mixin medium {
+		background: url('../../assets/images/shells1280x853.jpg') center center no-repeat;
+		background-size: cover;
+	@mixin bgeffect;
+	}
+	@mixin large{
+		background: url('../../assets/images/shells1920x1280.jpg') center top no-repeat;
+		background-size: cover;
+	@mixin bgeffect;
+	}
+	
 	
 	.mainService{
 		width: 90vw;

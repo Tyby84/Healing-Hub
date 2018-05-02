@@ -21,6 +21,7 @@
 	
 	&__title {
 		@mixin secTitle;
+		color: #222;
 		@mixin border;
 	}
 	

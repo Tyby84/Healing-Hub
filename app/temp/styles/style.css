@@ -391,7 +391,7 @@ a{
 	 position: relative;
     height: 100vh;
     background: url('../../assets/images/spa-640x426.jpg') center center no-repeat;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.6);
     background-blend-mode: overlay;
     background-size: cover;
 
@@ -401,7 +401,7 @@ a{
 
 .hero {
       background: url('../../assets/images/spa-1280x853.jpg') center center no-repeat;
-      background-color: rgba(0,0,0,.5);
+      background-color: rgba(0,0,0,.6);
       background-blend-mode: overlay;
       background-size: cover
 
@@ -412,7 +412,7 @@ a{
 
 .hero {
       background: url('../../assets/images/spa-1920x1280.jpg') center center no-repeat;
-      background-color: rgba(0,0,0,.5);
+      background-color: rgba(0,0,0,.6);
       background-blend-mode: overlay;
       background-size: cover
 
@@ -668,17 +668,25 @@ a{
 	}
 
 .about__title {
-		width: 30%;
+		width: 50%;
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
 		font-family: 'Lora', serif;
 		font-weight: 400;
+		color: #eee;
 		color: #222;
 		border-bottom: 2px;
 		border-bottom-color: #eee;
 		border-bottom-style: solid;
 		border-width: thin;
+	}
+
+@media (min-width: 850px) {
+
+.about__title {
+		width: 30%;
+	}
 	}
 
 .about__desc {
@@ -743,15 +751,34 @@ a{
 	
 	position: relative;
 	height: 100vh;
-	background: url('../../assets/images/shells1920x1280.jpg') center center no-repeat;
+	background: url('../../assets/images/shell640x426.jpg') center top no-repeat;
 	background-size: cover;
-	
-	background-color: rgba(0,0,0,.5);
-	
+	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
-	
 	background-size: cover;
 }
+
+@media (min-width: 850px) {
+
+.prices{
+		background: url('../../assets/images/shells1280x853.jpg') center center no-repeat;
+		background-size: cover;
+	background-color: rgba(0,0,0,.6);
+	background-blend-mode: overlay;
+	background-size: cover
+}
+	}
+
+@media (min-width: 1200px) {
+
+.prices{
+		background: url('../../assets/images/shells1920x1280.jpg') center top no-repeat;
+		background-size: cover;
+	background-color: rgba(0,0,0,.6);
+	background-blend-mode: overlay;
+	background-size: cover
+}
+	}
 
 .prices .mainService{
 		width: 90vw;
@@ -791,24 +818,31 @@ a{
 	}
 
 .prices__title {
-		width: 30%;
+		width: 50%;
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
 		font-family: 'Lora', serif;
 		font-weight: 400;
-		color: #222;
+		color: #eee;
 		border-bottom: 2px;
 		border-bottom-color: #eee;
 		border-bottom-style: solid;
 		border-width: thin;
 	}
 
+@media (min-width: 850px) {
+
+.prices__title {
+		width: 30%;
+	}
+	}
+
 .mastypes{
 	height: 100vh;
 	background: url('../../assets/images/mastype-small.jpg') center top no-repeat;
 	background-size: cover;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
 	background-size: cover;
 }
@@ -818,7 +852,7 @@ a{
 .mastypes{
 		background: url('../../assets/images/mastype-medium.jpg') center top no-repeat;
 	background-size: cover;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
 	background-size: cover
 }
@@ -829,24 +863,31 @@ a{
 .mastypes{
 		background: url('../../assets/images/mastype-large.jpg') center top no-repeat;
 	background-size: cover;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
 	background-size: cover
 }
 	}
 
 .mastypes__title {
-		width: 30%;
+		width: 50%;
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
 		font-family: 'Lora', serif;
 		font-weight: 400;
-		color: #222;
+		color: #eee;
 		border-bottom: 2px;
 		border-bottom-color: #eee;
 		border-bottom-style: solid;
 		border-width: thin;
+	}
+
+@media (min-width: 850px) {
+
+.mastypes__title {
+		width: 30%;
+	}
 	}
 
 .mastypes__boxes {
@@ -888,12 +929,8 @@ a{
 	}
 	}
 
-.mastypes__box:last-child{
-			border:none;
-		}
-
 .mastypes__box:hover {
-			background-color: rgba(62,115,168, .8);
+			background-color: rgba(62,115,168, .5);
 			
 		}
 
@@ -914,6 +951,13 @@ a{
 	}
 	}
 
+@media (min-width: 1200px) {
+
+.mastypes__inload{
+			margin: 0rem 5rem auto 0
+	}
+	}
+
 .mastypes__inload__par {
 			color: #fff;
 			font-family: 'Montserrat', sans-serif;
@@ -924,9 +968,11 @@ a{
 		}
 
 .mastypes--active {
-		background-color: rgba(62,115,168, .8);
-		color: #222;
-		margin-left: .5rem;
+		background-color: rgba(62,115,168, .5);
+		color: #fff;
+		margin-left: .3rem;
+		border: 1px solid rgba(255, 255, 255, 0.53);
+		border-width: thin;
 	}
 
 
