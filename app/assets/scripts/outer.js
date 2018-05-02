@@ -20,7 +20,7 @@ $(document).ready(function(){
 	$('.mastypes__box').click(function() {
 		$('.mastypes__box').removeClass('mastypes--active');
 		
-		$(this).addClass('mastypes__inload--active');
+		$(this).addClass('mastypes--active');
 		let box = $(this).attr('id');
 		//console.log(box);
 		$('.mastypes__inload__par').load(`/assets/txt/${box}.txt`).hide().fadeTo(1000, 1);

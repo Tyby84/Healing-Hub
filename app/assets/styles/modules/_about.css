@@ -1,28 +1,47 @@
 .about{
-	background: url('../../assets/images/beac1920x1280.jpg') center 30% no-repeat;
+	position: relative;
+	height: 100vh;
+	background: url('../../assets/images/beach640x426.jpg') center 30% no-repeat;
+	
 	background-size: cover;
-	height: auto;
-	@mixin medium{
-		height: 100vh;
+	@mixin bgeffect-light;
+	
+	@mixin medium {
+		background: url('../../assets/images/beach1280x853.jpg') center 30% no-repeat;
+	background-size: cover;
+	@mixin bgeffect-light;
 	}
 	
+	@mixin large {
+	background: url('../../assets/images/beac1920x1280.jpg') center 30% no-repeat;
+	background-size: cover;
 	@mixin bgeffect-light;
+	}
+	
+	
 	&__title {
 		@mixin secTitle;
+		@mixin border;
 	}
 	
 	&__desc {
-		padding: 1rem;
-		margin: 1rem auto;
+		width: 75vw;
+		padding: .5rem;
+		margin: .5rem auto;
 		line-height: 1.5;
 		background-color: rgba(0,0,0,.5);
 		color: #eee;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1.2rem;
+		font-size: 1rem;
         font-weight: 400;
 		text-align: center;
 		border-radius: 1rem;
-		@mixin medium{
+		@mixin medium {
+			width: 70vw;
+			padding: 1rem;
+			font-size: 1.1rem;
+		}
+		@mixin large {
 			width: 50vw;
 		}
 		&__title {
@@ -32,14 +51,18 @@
 	}
 	&__img {
 			position: relative;
-			width: 150px;
-			height: 150px;
+			width: 130px;
+			height: 130px;
+			margin-top: 1rem;
+			margin-bottom: 2rem;
 			border: 5px solid rgba(92, 92, 92, 0.25);
 			border-radius: 50%;
 			left: 50%;
 			transform: translateX(-50%);
-			margin-top: 1rem;
-			margin-bottom: 2rem;
+		@mixin medium{
+			width: 150px;
+			height: 150px;
+		}
 		}
 		
 	

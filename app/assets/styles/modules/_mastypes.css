@@ -1,57 +1,90 @@
 .mastypes{
 	height: 100vh;
+	background: url('../../assets/images/mastype-small.jpg') center top no-repeat;
+	background-size: cover;
+	@mixin bgeffect;
+	
+	@mixin medium {
+		background: url('../../assets/images/mastype-medium.jpg') center top no-repeat;
+	background-size: cover;
+	@mixin bgeffect;
+	}
+	@mixin large {
+		background: url('../../assets/images/mastype-large.jpg') center top no-repeat;
+	background-size: cover;
+	@mixin bgeffect;
+	}
 	
 	&__title {
 		@mixin secTitle;
+		@mixin border;
 	}
 	
 	&__boxes {
 		display: flex;
 		flex-direction: column;
-		float: left;
-		margin-top: 1rem;
+		
+		margin-top: 1.5rem;
+		@mixin medium{
+			float: left;
+		}
 	}
 	
-	&__box{
-		height: 60px;
-		background-color: #1a2a83;
-		width: 300px;
-		margin-left: 1rem;
-		border-bottom: 3px solid #d8d8d8;
+	&__box {
+		height: 50px;
+		width: 100%;
+		
+		background-color: $main;
 		color: #eee;
+		margin-bottom: 3px;
 		text-align: center;
 		font-family: 'Montserrat', sans-serif;
-		font-size: 1.1rem;
+		font-size: 1rem;
         font-weight: 400;
 		cursor: pointer;
-		transition: background .3s ease-out;
+		transition: all .3s ease-out;
+		
+		@mixin medium{
+		height: 60px;
+		width: 300px;
+		
+		font-size: 1.1rem;
+		}
 		
 		&:last-child{
 			border:none;
 		}
 		&:hover {
 			background-color: rgba($main, .8);
+			
 		}
 	}
 	
 	&__inload{
-		float: right;
-		width: 60vw;
+		
+		width: 100%;
 		height: auto;
-		margin: 1rem 2rem auto 0;
-		/*border: 1px solid #333;*/
+		
 		transition: all .6s ease-out;
+		@mixin medium {
+			width: 55%;
+			float: right;
+			margin: 0rem 3rem auto 0;
+		}
 		
 		&__par {
-			padding: 0 2rem;
+			color: #fff;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 1.2rem;
-        	font-weight: 300;
+        	font-weight: 400;
 			line-height: 1.4;
+			text-align: justify;
 		}
 	}
 	
 	&--active {
 		background-color: rgba($main, .8);
+		color: #222;
+		margin-left: .5rem;
 	}
 }
