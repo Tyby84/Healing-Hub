@@ -54,15 +54,12 @@
 		
 		&:hover {
 			background-color: rgba($main, .5);
-			
 		}
 	}
 	
 	&__inload{
-		
 		width: 100%;
 		height: auto;
-		
 		transition: all .6s ease-out;
 		@mixin medium {
 			width: 55%;
