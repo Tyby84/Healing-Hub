@@ -1,9 +1,9 @@
 * {box-sizing: border-box;}
 body{
-    background-color: #c3c3c3;
+    background-color: #222;
 }
 img {
-    display: block;
+    /*display: block;*/
     
 }
 a{

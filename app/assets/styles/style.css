@@ -2,12 +2,12 @@
 @import './base/mixins';
 @import './base/global';
 @import './base/variables';
-
 @import './modules/_hero';
 @import './modules/_nav';
 @import './modules/_arrow';
 @import './modules/_about';
 @import './modules/_prices';
 @import './modules/_mastypes';
+@import './modules/_gallery';
 
 
