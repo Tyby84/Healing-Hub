@@ -393,7 +393,6 @@ a{
     background: url('../../assets/images/spa-640x426.jpg') center center no-repeat;
     background-color: rgba(0,0,0,.6);
     background-blend-mode: overlay;
-    background-size: cover;
 
 }
 
@@ -402,8 +401,7 @@ a{
 .hero {
       background: url('../../assets/images/spa-1280x853.jpg') center center no-repeat;
       background-color: rgba(0,0,0,.6);
-      background-blend-mode: overlay;
-      background-size: cover
+      background-blend-mode: overlay
 
 }
 	}
@@ -413,8 +411,7 @@ a{
 .hero {
       background: url('../../assets/images/spa-1920x1280.jpg') center center no-repeat;
       background-color: rgba(0,0,0,.6);
-      background-blend-mode: overlay;
-      background-size: cover
+      background-blend-mode: overlay
 
 }
 	}
@@ -634,9 +631,8 @@ a{
 	background: url('../../assets/images/beach640x426.jpg') center 30% no-repeat;
 	
 	background-size: cover;
-	background-color: #6a6a6a;
+	background-color: rgba(0,0,0,.3);
 	background-blend-mode: overlay;
-	background-size: cover;
 		
 	
 }
@@ -646,9 +642,8 @@ a{
 .about{
 		background: url('../../assets/images/beach1280x853.jpg') center 30% no-repeat;
 	background-size: cover;
-	background-color: #6a6a6a;
-	background-blend-mode: overlay;
-	background-size: cover
+	background-color: rgba(0,0,0,.3);
+	background-blend-mode: overlay
 		
 	
 }
@@ -659,9 +654,8 @@ a{
 .about{
 	background: url('../../assets/images/beac1920x1280.jpg') center 30% no-repeat;
 	background-size: cover;
-	background-color: #6a6a6a;
-	background-blend-mode: overlay;
-	background-size: cover
+	background-color: rgba(0,0,0,.3);
+	background-blend-mode: overlay
 		
 	
 }
@@ -755,7 +749,6 @@ a{
 	background-size: cover;
 	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
-	background-size: cover;
 }
 
 @media (min-width: 850px) {
@@ -764,8 +757,7 @@ a{
 		background: url('../../assets/images/shells1280x853.jpg') center center no-repeat;
 		background-size: cover;
 	background-color: rgba(0,0,0,.6);
-	background-blend-mode: overlay;
-	background-size: cover
+	background-blend-mode: overlay
 }
 	}
 
@@ -775,8 +767,7 @@ a{
 		background: url('../../assets/images/shells1920x1280.jpg') center top no-repeat;
 		background-size: cover;
 	background-color: rgba(0,0,0,.6);
-	background-blend-mode: overlay;
-	background-size: cover
+	background-blend-mode: overlay
 }
 	}
 
@@ -844,7 +835,6 @@ a{
 	background-size: cover;
 	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
-	background-size: cover;
 }
 
 @media (min-width: 850px) {
@@ -853,8 +843,7 @@ a{
 		background: url('../../assets/images/mastype-medium.jpg') center top no-repeat;
 	background-size: cover;
 	background-color: rgba(0,0,0,.6);
-	background-blend-mode: overlay;
-	background-size: cover
+	background-blend-mode: overlay
 }
 	}
 
@@ -864,8 +853,7 @@ a{
 		background: url('../../assets/images/mastype-large.jpg') center top no-repeat;
 	background-size: cover;
 	background-color: rgba(0,0,0,.6);
-	background-blend-mode: overlay;
-	background-size: cover
+	background-blend-mode: overlay
 }
 	}
 
@@ -1042,5 +1030,85 @@ a{
 .gallery__picbox__six {
 			flex: 2	 1 100px;
 		}
+
+.contact{
+	height: 100vh;
+	background: url('../../assets/images/bud-sm.jpg') top left no-repeat;
+	background-size: cover;
+	background-color: rgba(0,0,0,.3);
+	background-blend-mode: overlay;
+	
+}
+
+@media (min-width: 850px) {
+
+.contact{
+		background: url('../../assets/images/bud-med.jpg') top left no-repeat;
+	background-size: cover;
+		background-color: rgba(0,0,0,.3);
+		background-blend-mode: overlay
+	
+}
+	}
+
+@media (min-width: 1200px) {
+
+.contact{
+		background: url('../../assets/images/bud-lrg.jpg') top left no-repeat;
+	background-size: cover;
+		background-color: rgba(0,0,0,.3);
+		background-blend-mode: overlay
+	
+}
+	}
+
+.contact__title{
+		width: 50%;
+		margin: 0 auto 1rem auto;
+		padding: 1rem 0;
+		text-align: center;
+		font-family: 'Lora', serif;
+		font-weight: 400;
+		color: #eee;
+		border-bottom: 2px;
+		border-bottom-color: #eee;
+		border-bottom-style: solid;
+		border-width: thin;
+	}
+
+@media (min-width: 850px) {
+
+.contact__title{
+		width: 30%;
+	}
+	}
+
+.contact__desc {
+		width: 80%;
+		margin: 1rem auto;
+		padding: .5rem;
+		position: relative;
+		text-align: center;
+		color: #fff;
+		background: rgba(0,0,0,0.6);
+		
+		
+	}
+
+@media (min-width: 1200px) {
+
+.contact__desc {
+			color: #222;
+			background: none;
+			margin: 0;
+			margin-top:5rem;
+			width: 40%;
+			left: 50%;
+			-webkit-transform: translateX(-20%);
+			        transform: translateX(-20%)
+		
+		
+	}
+	}
 
 

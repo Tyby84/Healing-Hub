@@ -19,13 +19,13 @@
 @define-mixin bgeffect{
 	background-color: rgba(0,0,0,.6);
 	background-blend-mode: overlay;
-	background-size: cover;
+	
 }
 
 @define-mixin bgeffect-light{
-	background-color: #6a6a6a;
+	background-color: rgba(0,0,0,.3);
 	background-blend-mode: overlay;
-	background-size: cover;
+	
 }
 
 @define-mixin secTitle{
