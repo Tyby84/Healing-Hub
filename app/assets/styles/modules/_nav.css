@@ -2,7 +2,7 @@
 	
 	opacity: 0;
     display: flex;
-    padding-top: 3rem;
+    padding-top: 2rem;
 	margin-bottom: 2rem;
     align-items:center;
     justify-content: flex-center;
@@ -14,7 +14,7 @@
    
      
     a { 
-		margin-right: 1.2rem;
+		margin-right: 1rem;
 		@mixin medium{
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
@@ -23,16 +23,15 @@
         color: $main;
         padding: .5rem;
 		position: relative;
-			
+		transition: color .3s ease-out;	
 		}
 		
 		
     }
 	
 }
-.nav a.active{
+.nav a.active, .nav a:hover{
 	color: #c3c3c3;
-	letter-spacing: 1px;
 }
 
 /*.list::before{
