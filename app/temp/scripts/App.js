@@ -60,77 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _Nav = __webpack_require__(1);
-
-var _Nav2 = _interopRequireDefault(_Nav);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var navigation = new _Nav2.default(); //import './outer';
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(2);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Nav = function () {
-	function Nav() {
-		_classCallCheck(this, Nav);
-
-		this.nav = (0, _jquery2.default)('.nav');
-		this.makeNavBar();
-	}
-
-	_createClass(Nav, [{
-		key: 'makeNavBar',
-		value: function makeNavBar() {
-
-			var that = this;
-			(0, _jquery2.default)(window).scroll(function () {
-				if ((0, _jquery2.default)(document).scrollTop() > 300) {
-					console.log('work');
-					that.nav.addClass('nav--onscroll');
-					console.log(that);
-				} else {
-					that.nav.removeClass('nav--onscroll');
-				}
-			});
-		}
-	}]);
-
-	return Nav;
-}();
-
-exports.default = Nav;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10499,6 +10433,111 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(2);
+
+var _Nav = __webpack_require__(3);
+
+var _Nav2 = _interopRequireDefault(_Nav);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var navigation = new _Nav2.default();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+(0, _jquery2.default)(document).ready(function () {
+
+	_jquery2.default.getJSON('../../assets/json/prices.json', function (data) {
+
+		var min60 = data["60min"];
+		var min90 = data["90min"];
+		var min120 = data["120min"];
+
+		(0, _jquery2.default)('span.60min').append(min60);
+		(0, _jquery2.default)('span.90min').append(min90);
+		(0, _jquery2.default)('span.120min').append(min120);
+	});
+
+	//Loading massage types
+	(0, _jquery2.default)('.mastypes__box').click(function () {
+		(0, _jquery2.default)('.mastypes__box').removeClass('mastypes--active');
+
+		(0, _jquery2.default)(this).addClass('mastypes--active');
+		var box = (0, _jquery2.default)(this).attr('id');
+		//console.log(box);
+		(0, _jquery2.default)('.mastypes__inload__par').load('/assets/txt/' + box + '.txt').hide().fadeTo(1000, 1);
+	});
+});
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Nav = function () {
+	function Nav() {
+		_classCallCheck(this, Nav);
+
+		this.nav = (0, _jquery2.default)('.nav');
+		this.makeNavBar();
+	}
+
+	_createClass(Nav, [{
+		key: 'makeNavBar',
+		value: function makeNavBar() {
+
+			var that = this;
+			(0, _jquery2.default)(window).scroll(function () {
+				if ((0, _jquery2.default)(document).scrollTop() > 300) {
+					console.log('work');
+					that.nav.addClass('nav--onscroll');
+					console.log(that);
+				} else {
+					that.nav.removeClass('nav--onscroll');
+				}
+			});
+		}
+	}]);
+
+	return Nav;
+}();
+
+exports.default = Nav;
 
 /***/ })
 /******/ ]);
