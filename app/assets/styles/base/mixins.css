@@ -28,13 +28,15 @@
 	
 }
 
+
 @define-mixin secTitle{
 		width: 50%;
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
-		font-family: 'Lora', serif;
-		font-weight: 400;
+		font-family: 'Tangerine', cursive;
+		  font-size: 3rem;
+        font-weight: 500;
 		color: #eee;
 	@mixin medium {
 		width: 30%;

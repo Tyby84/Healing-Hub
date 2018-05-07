@@ -24,7 +24,7 @@
 		margin: 4rem auto 0 auto;
 		background: rgba($main, .3);
 		padding: 1rem;
-		
+		font-family: 'Montserrat', sans-serif;
 		border-radius: 1rem;
 		@mixin medium {
 			width: 70vw;
@@ -36,14 +36,14 @@
 		}
 		
 		&__title{
-			text-transform: capitalize;
-			letter-spacing: 1px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 300;
 		}
 	}
 	
 	span{
 		color: $main;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 	
 	&__title {

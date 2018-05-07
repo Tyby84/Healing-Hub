@@ -23,7 +23,6 @@
 	&__boxes {
 		display: flex;
 		flex-direction: column;
-		
 		margin-top: 1.5rem;
 		@mixin medium{
 			float: left;
@@ -64,10 +63,10 @@
 		@mixin medium {
 			width: 55%;
 			float: right;
-			margin: 0rem 3rem auto 0;
+			margin: 0rem 3rem 0 0;
 		}
 		@mixin large {
-			margin: 0rem 5rem auto 0;
+			margin: 0rem 4rem 0 0;
 		}
 		
 		&__par {

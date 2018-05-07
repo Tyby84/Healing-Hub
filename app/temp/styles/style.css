@@ -376,6 +376,11 @@ a{
     justify-content: center;
 }
 
+.flex--middle{
+	display: flex;
+	justify-content: center;
+}
+
 .wrapper {
 	margin: 1.2rem;
 }
@@ -680,8 +685,9 @@ a{
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
-		font-family: 'Lora', serif;
-		font-weight: 400;
+		font-family: 'Tangerine', cursive;
+		font-size: 3rem;
+		font-weight: 500;
 		color: #eee;
 		color: #222;
 		border-bottom: 2px;
@@ -733,7 +739,7 @@ a{
 	}
 
 .about__desc__title {
-			font-family: 'Lora', serif;
+			font-family: 'Montserrat', sans-serif;
 		}
 
 .about__img {
@@ -794,7 +800,7 @@ a{
 		margin: 4rem auto 0 auto;
 		background: rgba(62,115,168, .3);
 		padding: 1rem;
-		
+		font-family: 'Montserrat', sans-serif;
 		border-radius: 1rem;
 	}
 
@@ -815,13 +821,13 @@ a{
 	}
 
 .prices .mainService__title{
-			text-transform: capitalize;
-			letter-spacing: 1px;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 300;
 		}
 
 .prices span{
 		color: #3e73a8;
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 	}
 
 .prices__title {
@@ -829,8 +835,9 @@ a{
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
-		font-family: 'Lora', serif;
-		font-weight: 400;
+		font-family: 'Tangerine', cursive;
+		font-size: 3rem;
+		font-weight: 500;
 		color: #eee;
 		border-bottom: 2px;
 		border-bottom-color: #eee;
@@ -878,8 +885,9 @@ a{
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
-		font-family: 'Lora', serif;
-		font-weight: 400;
+		font-family: 'Tangerine', cursive;
+		font-size: 3rem;
+		font-weight: 500;
 		color: #eee;
 		border-bottom: 2px;
 		border-bottom-color: #eee;
@@ -897,7 +905,6 @@ a{
 .mastypes__boxes {
 		display: flex;
 		flex-direction: column;
-		
 		margin-top: 1.5rem;
 	}
 
@@ -948,14 +955,14 @@ a{
 .mastypes__inload{
 			width: 55%;
 			float: right;
-			margin: 0rem 3rem auto 0
+			margin: 0rem 3rem 0 0
 	}
 	}
 
 @media (min-width: 1200px) {
 
 .mastypes__inload{
-			margin: 0rem 5rem auto 0
+			margin: 0rem 4rem 0 0
 	}
 	}
 
@@ -987,8 +994,9 @@ a{
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
-		font-family: 'Lora', serif;
-		font-weight: 400;
+		font-family: 'Tangerine', cursive;
+		font-size: 3rem;
+		font-weight: 500;
 		color: #eee;
 		border-bottom: 2px;
 		border-bottom-color: #eee;
@@ -1083,8 +1091,9 @@ a{
 		margin: 0 auto 1rem auto;
 		padding: 1rem 0;
 		text-align: center;
-		font-family: 'Lora', serif;
-		font-weight: 400;
+		font-family: 'Tangerine', cursive;
+		font-size: 3rem;
+		font-weight: 500;
 		color: #eee;
 		border-bottom: 2px;
 		border-bottom-color: #eee;

@@ -25,9 +25,14 @@ a{
     align-content: center;
     justify-content: center;
 }
+.flex--middle{
+	display: flex;
+	justify-content: center;
+}
 .wrapper {
 	margin: 1.2rem;
 	@mixin large {
 		margin: 2rem;
 	}
 }
+
