@@ -1,7 +1,9 @@
 .mastypes{
-	height: 100vh;
+	height: 100%;
+	@mixin medium {height: 100vh;}
 	background: url('../../assets/images/mastype-small.jpg') center top no-repeat;
 	background-size: cover;
+	padding-bottom: 1rem;
 	@mixin bgeffect;
 	
 	@mixin medium {
@@ -54,22 +56,26 @@
 		&:hover {
 			background-color: rgba($main, .5);
 		}
+		
 	}
 	
 	&__inload{
 		width: 100%;
-		height: auto;
+		height: 100%;
 		transition: all .6s ease-out;
+		
 		@mixin medium {
 			width: 55%;
 			float: right;
 			margin: 0rem 3rem 0 0;
 		}
 		@mixin large {
-			margin: 0rem 4rem 0 0;
+			margin: 0rem 8rem 0 0;
 		}
 		
 		&__par {
+			height: 100%;
+			position: relative;
 			color: #fff;
 			font-family: 'Montserrat', sans-serif;
 			font-size: 1.2rem;
@@ -87,3 +93,10 @@
 		border-width: thin;
 	}
 }
+.fa-angle-right{
+		position: absolute;
+		margin-left: .4rem;
+		
+			font-size: 1.5rem;
+			
+		}
