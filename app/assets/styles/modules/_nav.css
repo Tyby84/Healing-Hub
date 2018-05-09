@@ -1,5 +1,6 @@
 .nav {
-	opacity: 0;
+	display: none;
+	/*opacity: 0;
     display: flex;
     padding: 2rem auto;
 	margin-bottom: 2rem;
@@ -27,41 +28,7 @@
 			
     }
 	
-	&--onscroll {
-			position: fixed;
-			top: 0;
-			left: 50%;
-			z-index: 99;
-			background-color: rgba(0,0,0,0.8);
-			transform: translateX(-50%) rotateX(360deg);
-		}
+	*/
 	
 }
-.nav a.active, .nav a:hover{
-	color: #c3c3c3;
-}
 
-/*.list::before{
-	position: absolute;
-	top: 3.5rem;
-	@mixin medium{
-	content:'';
-	display: inline-block;
-	
-	top: 2.5rem;
-	left:50%;
-	width: 10px;
-	height: 10px;
-	background-color: $main;
-	border-radius: 50%;
-	color: #fff;
-	}
-}*/
-
-
-@keyframes fadeNav{
-	100%{
-		opacity: 1;
-		
-	}
-}
