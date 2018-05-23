@@ -1003,7 +1003,7 @@ a{
 			}
 
 .gallery__picbox__one {
-			flex: 2 1 100px;
+			flex: 1 1 100px;
 			height: ;
 		}
 
@@ -1012,7 +1012,7 @@ a{
 		}
 
 .gallery__picbox__three {
-			flex: 6 2 100px;
+			flex: 5 2 100px;
 		}
 
 .gallery__picbox__four {

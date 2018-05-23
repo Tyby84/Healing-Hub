@@ -20,14 +20,14 @@
 			}
 		}
 		&__one {
-			flex: 2 1 100px;
+			flex: 1 1 100px;
 			height: ;
 		}
 		&__two {
 			flex: 1 1 100px;
 		}
 		&__three {
-			flex: 6 2 100px;
+			flex: 5 2 100px;
 		}
 		&__four {
 			flex: 1 1 100px;
