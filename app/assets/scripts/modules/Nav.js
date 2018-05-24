@@ -1,23 +1,20 @@
-import $ from 'jquery'; 
+import $ from 'jquery';
+import smoothScroll from 'jquery-smooth-scroll';
+
 
 class Nav {
 	 
  	constructor() {
- 		this.nav = $('.nav');
-		this.makeNavBar();
+ 		this.navItems = $('.nav a');
+		this.smoothing();
  	}
 	 
-	makeNavBar() {
+	smoothing() {
 		
-		let that = this;
-		$(window).scroll(function() {
-			if ($(document).scrollTop() > 300) {
-				console.log('work');
-				that.nav.addClass('nav--onscroll');
-				console.log(that);
-			} else {
-				that.nav.removeClass('nav--onscroll');
-			}
+		this.navItems.smoothScroll({
+			/*offset: -90,*/
+			speed: 1000
+			
 		});
 	}
 	 

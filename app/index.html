@@ -13,16 +13,16 @@
 <body>
     <div class="hero" id="mainHero">
        <!-- <div class="list"></div>-->
-        <!--<nav class="nav flex-center">
+        <nav class="nav">
            	
-            <a class="active" href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Prices</a>
-            <a href="#">Massages</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a id="home-link" class="active" href="#">Home</a>
+            <a id="about-link" href="#aboutMe">About</a>
+            <a id="prices-link" href="#price">Prices</a>
+            <a id="massages-link" href="#massages">Massages</a>
+            <a id="gal-link" href="#gallery">Gallery</a>
+            <a id="cont-link" href="#contact">Contact</a>
 
-        </nav>-->
+        </nav>
         
         <div class="hero__text">
             <h1 class="hero__text__title">Healing Hub</h1>
@@ -32,7 +32,7 @@
         <div class="arrdown"><i class="fas fa-angle-down"></i></div>
     </div>
     
-    <div class="about" id="aboutMe">
+    <div class="about" id="aboutMe" data-matching-link="#about-link">
     	<h1 class="about__title">About Me</h1>
     	
 			<img class="about__img" src="assets/images/agnes.jpg" alt="Agnes">
@@ -44,7 +44,7 @@
     	</div>
     </div>
     	
-    <div class="prices" id="price">
+    <div class="prices" id="price" data-matching-link="#prices-link">
     	<h1 class="prices__title">My Prices</h1>
     	
     	<div class="mainService">
@@ -53,7 +53,7 @@
     		<h2 class="mainService__title">120 minutes full body massage</h2><span class="120min"></span>
     	</div>
     </div>
-    <div class="mastypes" id="massages">
+    <div class="mastypes" id="massages" data-matching-link="#massages-link">
     <h1 class="mastypes__title">Massage Types</h1>
     	
     	<div class="wrapper">
@@ -71,7 +71,7 @@
     	
     </div>
     
-    <div class="gallery" id="gallery">
+    <div class="gallery" id="gallery" data-matching-link="#gal-link">
     <h1 class="gallery__title">Gallery</h1>
     	<div class="wrapper">
     		<div class="gallery__picbox">
@@ -87,7 +87,7 @@
     	</div>
     </div>
     
-    <div class="contact" id="contact">
+    <div class="contact" id="contact" data-matching-link="#cont-link">
     	<h1 class="contact__title">Contact</h1>
     	<div class="contact__desc">
     		<h3>Please call for appointment on the following telephone number!</h3>
