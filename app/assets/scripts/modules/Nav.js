@@ -5,7 +5,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 class Nav {
 	 
  	constructor() {
- 		this.navItems = $('.nav a');
+ 		this.navItems = $('.nav a, #arrow-link');
 		this.smoothing();
  	}
 	 

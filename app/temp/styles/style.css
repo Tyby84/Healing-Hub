@@ -501,12 +501,6 @@ a{
 }
 
 .nav {
-	
-    display: flex;
-    padding: 2rem auto;
-	margin-bottom: 2rem;
-    align-items:center;
-    justify-content: flex-center;
 	-webkit-animation-name: fadeNav;
 	        animation-name: fadeNav;
 	-webkit-animation-delay: 3s;
