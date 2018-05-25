@@ -1,26 +1,45 @@
-.nav {
-	animation-name: fadeNav;
+.mainNav {
+	/*animation-name: fadeNav;
 	animation-delay: 3s;
 	animation-duration: 2s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-   	transition: transform .5s ease-out;
-     
-    a { 
-		margin-right: 1rem;
+   	transition: transform .5s ease-out;*/
+     position: relative;
+	&__ul{
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(34, 34, 34, 0.83);
+		width: 12rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		list-style: none;
+		z-index: 10;
+		padding: 1.5rem;
+		margin: 0;
+		& li {
+			display: flex;
+			justify-content: space-between;
+	
+   & a { 
+		
 		@mixin medium{
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        margin-right: 2rem;
+       	padding: .5rem;
         font-size: 1.2rem;
-        color: $main;
-        padding: .9rem;
-		position: relative;
-		transition: color .3s ease-out;	
-		}
-			
-    }
+        color: #b9b9b9;
+		transition: all .3s ease-out;	
+			}
+	   &:hover {
+	   	margin-left: 1rem;
+		   color: #fff;
+	   }
+	   
+    	}
+	}
+}
 
-	
 }
 

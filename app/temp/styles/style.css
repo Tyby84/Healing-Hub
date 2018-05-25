@@ -422,6 +422,35 @@ a{
 }
 	}
 
+.hero__navi {
+		padding: 1rem 0 1rem 1rem;
+	}
+
+.hero__navi .fa-chevron-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			-webkit-transform: rotate(0);
+			        transform: rotate(0);
+			border: 1px solid #eee;
+			width: 1.2rem;
+			height: 1.2rem;
+			border-radius: 50%;
+			padding: 1rem;
+			font-size: 1.3rem;
+			color: #eee;
+			background-color: rgba(255,255,255,.3);
+			cursor: pointer;
+			transition: -webkit-transform .5s ease-out;
+			transition: transform .5s ease-out;
+			transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+		}
+
+.hero__navi .fa-chevron-right:hover {
+				-webkit-transform: rotate(180deg);
+				        transform: rotate(180deg);
+			}
+
 .hero__text{
         width: 100%;
         position: absolute;
@@ -500,43 +529,53 @@ a{
 	}
 }
 
-.nav {
-	-webkit-animation-name: fadeNav;
-	        animation-name: fadeNav;
-	-webkit-animation-delay: 3s;
-	        animation-delay: 3s;
-	-webkit-animation-duration: 2s;
-	        animation-duration: 2s;
-	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
-   	transition: -webkit-transform .5s ease-out;
-   	transition: transform .5s ease-out;
-   	transition: transform .5s ease-out, -webkit-transform .5s ease-out;
+.mainNav {
+	/*animation-name: fadeNav;
+	animation-delay: 3s;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: forwards;
+   	transition: transform .5s ease-out;*/
+     position: relative;
 
-	
 }
 
-.nav a { 
-		margin-right: 1rem;
-			
-    }
+.mainNav__ul{
+		display: flex;
+		flex-direction: column;
+		background-color: rgba(34, 34, 34, 0.83);
+		width: 12rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		list-style: none;
+		z-index: 10;
+		padding: 1.5rem;
+		margin: 0;
+}
+
+.mainNav__ul li {
+			display: flex;
+			justify-content: space-between;
+	}
 
 @media (min-width: 850px) {
 
-.nav a {
+.mainNav__ul li a {
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        margin-right: 2rem;
+       	padding: .5rem;
         font-size: 1.2rem;
-        color: #3e73a8;
-        padding: .9rem;
-		position: relative;
-		transition: color .3s ease-out
-			
-    }
+        color: #b9b9b9;
+		transition: all .3s ease-out
+	   
+    	}
 	}
+
+.mainNav__ul li a:hover {
+	   	margin-left: 1rem;
+		   color: #fff;
+	   }
 
 .arrdown {
 	width: 1.3rem;

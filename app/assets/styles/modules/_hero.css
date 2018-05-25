@@ -13,6 +13,32 @@
       background: url('../../assets/images/spa-1920x1280.jpg') center center no-repeat;
       @mixin bgeffect;
     }
+	
+	&__navi {
+		padding: 1rem 0 1rem 1rem;
+		
+		
+		.fa-chevron-right {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: rotate(0);
+			border: 1px solid #eee;
+			width: 1.2rem;
+			height: 1.2rem;
+			border-radius: 50%;
+			padding: 1rem;
+			font-size: 1.3rem;
+			color: #eee;
+			background-color: rgba(255,255,255,.3);
+			cursor: pointer;
+			transition: transform .5s ease-out;
+			
+			&:hover {
+				transform: rotate(180deg);
+			}
+		}
+	}
 
    &__text{
         width: 100%;

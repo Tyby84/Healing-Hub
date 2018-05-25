@@ -10517,7 +10517,7 @@ var Nav = function () {
 	function Nav() {
 		_classCallCheck(this, Nav);
 
-		this.navItems = (0, _jquery2.default)('.nav a, #arrow-link');
+		this.navItems = (0, _jquery2.default)('.mainNav a, #arrow-link');
 		this.smoothing();
 	}
 
