@@ -10518,6 +10518,9 @@ var Nav = function () {
 		_classCallCheck(this, Nav);
 
 		this.navItems = (0, _jquery2.default)('.mainNav a, #arrow-link');
+		this.navList = (0, _jquery2.default)('.mainNav__ul');
+		this.menu = (0, _jquery2.default)('.fa-chevron-right');
+		this.naviToggle();
 		this.smoothing();
 	}
 
@@ -10529,6 +10532,15 @@ var Nav = function () {
 				/*offset: -90,*/
 				speed: 1000
 
+			});
+		}
+	}, {
+		key: 'naviToggle',
+		value: function naviToggle() {
+			var that = this;
+			this.menu.click(function () {
+				that.navList.toggleClass('mainNav__ul--active');
+				that.menu.toggleClass('fa-chevron-right--turn');
 			});
 		}
 	}]);
