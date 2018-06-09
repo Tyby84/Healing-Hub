@@ -1,6 +1,3 @@
-import $ from 'jquery';
-
-
 $(document).ready(function(){
 	
 	$.getJSON('../../assets/json/prices.json', function(data){
