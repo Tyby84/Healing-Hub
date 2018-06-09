@@ -15,22 +15,24 @@
     }
 	
 	&__navi {
-		padding: 2rem 0 1rem 1.5rem;
-		
+		  padding: 2rem 0 1rem 1.5rem;
+		  opacity: 0;
+		  animation-name: fadeText;
+		  animation-delay: 3s;
+		  animation-duration: 2s;
+		  animation-fill-mode: forwards;
+		  animation-timing-function: ease-in-out;
 		
 		.fa-chevron-right {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			transform: rotate(0deg);
-			
 			width: 1.2rem;
 			height: 1.2rem;
 			border-radius: 50%;
-			
 			font-size: 1.3rem;
-			color: #eee;
-/*			background-color: rgba(255,255,255,.3);*/
+			color: #cccccc;
 			cursor: pointer;
 			transition: all .5s ease-out;
 			transform-origin: center center;
@@ -40,7 +42,7 @@
 			}
 			
 			&:hover {
-				
+				color: #fff;
 			}
 		}
 	}
@@ -48,7 +50,7 @@
    &__text{
         width: 100%;
         position: absolute;
-       	top: 20%;
+       	top: 10%;
 	   left: 50%;
 	   transform: translateX(-50%);
         color: #eee;
@@ -72,7 +74,7 @@
 		  @mixin medium {
 		  	width: 60%;
 		  }
-		animation-name: fadeText;
+		  animation-name: fadeText;
 		  animation-delay: 1s;
 		  animation-duration: 2s;
 		  animation-fill-mode: forwards;
@@ -80,10 +82,10 @@
       }
       &__subtitle{
 		  
-        font-family: 'Tangerine', cursive;
+          font-family: 'Tangerine', cursive;
 		  font-size: 3rem;
-        font-weight: 500;
-		opacity: 0;
+          font-weight: 500;
+		  opacity: 0;
 		  animation-name: fadeText;
 		  animation-delay: 2s;
 		  animation-duration: 2s;

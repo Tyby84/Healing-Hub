@@ -423,7 +423,18 @@ a{
 	}
 
 .hero__navi {
-		padding: 2rem 0 1rem 1.5rem;
+		  padding: 2rem 0 1rem 1.5rem;
+		  opacity: 0;
+		  -webkit-animation-name: fadeText;
+		          animation-name: fadeText;
+		  -webkit-animation-delay: 3s;
+		          animation-delay: 3s;
+		  -webkit-animation-duration: 2s;
+		          animation-duration: 2s;
+		  -webkit-animation-fill-mode: forwards;
+		          animation-fill-mode: forwards;
+		  -webkit-animation-timing-function: ease-in-out;
+		          animation-timing-function: ease-in-out;
 	}
 
 .hero__navi .fa-chevron-right {
@@ -432,14 +443,11 @@ a{
 			align-items: center;
 			-webkit-transform: rotate(0deg);
 			        transform: rotate(0deg);
-			
 			width: 1.2rem;
 			height: 1.2rem;
 			border-radius: 50%;
-			
 			font-size: 1.3rem;
-			color: #eee;
-/*			background-color: rgba(255,255,255,.3);*/
+			color: #cccccc;
 			cursor: pointer;
 			transition: all .5s ease-out;
 			-webkit-transform-origin: center center;
@@ -452,13 +460,13 @@ a{
 			}
 
 .hero__navi .fa-chevron-right:hover {
-				
+				color: #fff;
 			}
 
 .hero__text{
         width: 100%;
         position: absolute;
-       	top: 20%;
+       	top: 10%;
 	   left: 50%;
 	   -webkit-transform: translateX(-50%);
 	           transform: translateX(-50%);
@@ -483,8 +491,8 @@ a{
         padding: 1rem 0;
         font-family: 'Lora', serif;
 		opacity: 0;
-		-webkit-animation-name: fadeText;
-		        animation-name: fadeText;
+		  -webkit-animation-name: fadeText;
+		          animation-name: fadeText;
 		  -webkit-animation-delay: 1s;
 		          animation-delay: 1s;
 		  -webkit-animation-duration: 2s;
@@ -504,10 +512,10 @@ a{
 
 .hero__text__subtitle{
 		  
-        font-family: 'Tangerine', cursive;
+          font-family: 'Tangerine', cursive;
 		  font-size: 3rem;
-        font-weight: 500;
-		opacity: 0;
+          font-weight: 500;
+		  opacity: 0;
 		  -webkit-animation-name: fadeText;
 		          animation-name: fadeText;
 		  -webkit-animation-delay: 2s;
@@ -547,18 +555,31 @@ a{
 .mainNav__ul{
 		display: flex;
 		flex-direction: column;
-		background-color: rgba(62,115,168, 0.83);
-		width: 12rem;
+		background-color: rgba(0,0,0, 0.85);
+		width: 90%;
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		list-style: none;
 		z-index: 10;
-		padding: 1.5rem;
-		margin: 0;
+		padding: 2.5rem 1.5rem;
+		
 		opacity: 0;
 		transition: all .5s ease-out;
 }
+
+@media (min-width: 850px) {
+
+.mainNav__ul{
+			width: 15rem;
+			background-color: rgba(62,115,168, 0.5);
+			left: 0;
+			-webkit-transform: translateX(0);
+			        transform: translateX(0)
+}
+	}
 
 .mainNav__ul--active{
 			opacity: 1
@@ -566,12 +587,10 @@ a{
 
 .mainNav__ul li {
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 	}
 
 .mainNav__ul li a { 
-		
-		
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
        	padding: .5rem;
@@ -582,8 +601,8 @@ a{
     	}
 
 .mainNav__ul li a:hover {
-	   	background-color: rgba(255, 255, 255, 0.65);
-		   color: #3e73a8;
+	   /*	background-color: rgba(255, 255, 255, 0.65);*/
+		   color: #eee;
 		   
 	   }
 
@@ -607,36 +626,36 @@ a{
 	opacity: 0;
 	-webkit-animation-name: arrow;
 	        animation-name: arrow;
-	-webkit-animation-delay: 4s;
-	        animation-delay: 4s;
+	-webkit-animation-delay: 3s;
+	        animation-delay: 3s;
 	-webkit-animation-duration: 4s;
 	        animation-duration: 4s;
-	-webkit-animation-direction: alternate;
-	        animation-direction: alternate;
+	-webkit-animation-direction:normal;
+	        animation-direction:normal;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
 	        animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count: infinite;
-	        animation-iteration-count: infinite
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1
 }
 	}
 
 @-webkit-keyframes arrow {
 	
+	
 	100%{
 		opacity: 1;
-		top: 77vh;
-		-webkit-transform: translate(-50%,-50%);
-		        transform: translate(-50%,-50%);
+		
 	}
 }
 
 @keyframes arrow {
 	
+	
 	100%{
 		opacity: 1;
-		top: 77vh;
-		-webkit-transform: translate(-50%,-50%);
-		        transform: translate(-50%,-50%);
+		
 	}
 }
 
@@ -652,9 +671,9 @@ a{
 
 .about{
 	position: relative;
-	height: 100vh;
+	height: auto;
 	background: url('../../assets/images/beach640x426.jpg') center 30% no-repeat;
-	
+	padding-bottom: 1rem;
 	background-size: cover;
 	background-color: rgba(0,0,0,.3);
 	background-blend-mode: overlay;
@@ -772,7 +791,8 @@ a{
 .prices{
 	
 	position: relative;
-	height: 100vh;
+	height: auto;
+	padding-bottom: 1rem;
 	background: url('../../assets/images/shell640x426.jpg') center top no-repeat;
 	background-size: cover;
 	background-color: rgba(0,0,0,.6);
@@ -1009,7 +1029,7 @@ a{
 		}
 
 .gallery {
-	height: 100vh;
+	height: auto;
 	background-color: #222;
 	
 }
@@ -1040,6 +1060,7 @@ a{
 		display: flex;
 		
 		flex-wrap: wrap;
+		
 	}
 
 .gallery__picbox img{
@@ -1055,33 +1076,9 @@ a{
 				        transform: scale(1.2);
 			}
 
-.gallery__picbox__one {
-			flex: 1 1 100px;
-			height: ;
-		}
-
-.gallery__picbox__two {
-			flex: 1 1 100px;
-		}
-
-.gallery__picbox__three {
-			flex: 5 2 100px;
-		}
-
-.gallery__picbox__four {
-			flex: 1 1 100px;
-		}
-
-.gallery__picbox__five {
-			flex: 4 1 100px;
-		}
-
-.gallery__picbox__six {
-			flex: 2	 1 100px;
-		}
-
 .contact{
-	height: 100vh;
+	height: auto;
+	padding-bottom: 1rem;
 	background: url('../../assets/images/bud-sm.jpg') top left no-repeat;
 	background-size: cover;
 	background-color: rgba(0,0,0,.3);
@@ -1152,10 +1149,10 @@ a{
 			background: none;
 			margin: 0;
 			margin-top:5rem;
-			width: 40%;
+			width: 30%;
 			left: 50%;
-			-webkit-transform: translateX(-20%);
-			        transform: translateX(-20%)
+			-webkit-transform: translateX(-50%);
+			        transform: translateX(-50%)
 		
 		
 	}

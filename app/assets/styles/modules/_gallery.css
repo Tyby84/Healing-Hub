@@ -1,5 +1,5 @@
 .gallery {
-	height: 100vh;
+	height: auto;
 	background-color: #222;
 	
 	&__title{
@@ -19,25 +19,7 @@
 				transform: scale(1.2);
 			}
 		}
-		&__one {
-			flex: 1 1 100px;
-			height: ;
-		}
-		&__two {
-			flex: 1 1 100px;
-		}
-		&__three {
-			flex: 5 2 100px;
-		}
-		&__four {
-			flex: 1 1 100px;
-		}
-		&__five {
-			flex: 4 1 100px;
-		}
-		&__six {
-			flex: 2	 1 100px;
-		}
+		
 	}
 	
 }

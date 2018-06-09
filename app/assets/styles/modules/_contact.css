@@ -1,5 +1,6 @@
 .contact{
-	height: 100vh;
+	height: auto;
+	padding-bottom: 1rem;
 	background: url('../../assets/images/bud-sm.jpg') top left no-repeat;
 	background-size: cover;
 	@mixin bgeffect-light;
@@ -32,9 +33,9 @@
 			background: none;
 			margin: 0;
 			margin-top:5rem;
-			width: 40%;
+			width: 30%;
 			left: 50%;
-			transform: translateX(-20%);
+			transform: translateX(-50%);
 			
 		}
 		
