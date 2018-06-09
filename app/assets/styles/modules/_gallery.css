@@ -9,14 +9,15 @@
 	
 	&__picbox {
 		display: flex;
-		
+		justify-content: center;
 		flex-wrap: wrap;
 		& img{
 			margin: .5rem;
 			max-height: 250px;
+			border: 3px solid #525252;
 			transition: transform .8s ease-out;
 			&:hover{
-				transform: scale(1.2);
+				transform: scale(1.1);
 			}
 		}
 		
