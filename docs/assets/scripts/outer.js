@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$.getJSON('/assets/json/prices.json', function(data){
+	$.getJSON('./assets/json/prices.json', function(data){
 		
 		let min60 = data["60min"];
 		let min90 = data["90min"];
@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$(this).addClass('mastypes--active');
 		let box = $(this).attr('id');
 		//console.log(box);
-		$('.mastypes__inload__par').load(`/assets/txt/${box}.txt`).hide().fadeTo(1000, 1);
+		$('.mastypes__inload__par').load(`./assets/txt/${box}.txt`).hide().fadeTo(1000, 1);
 	});
 
 });
