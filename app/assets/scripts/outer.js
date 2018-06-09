@@ -23,7 +23,7 @@ $(document).ready(function(){
 		$(this).addClass('mastypes--active');
 		let box = $(this).attr('id');
 		//console.log(box);
-		$('.mastypes__inload__par').load(`/assets/txt/${box}.txt`).hide().fadeTo(1000, 1);
+		$('.mastypes__inload__par').load(`../assets/txt/${box}.txt`).hide().fadeTo(1000, 1);
 	});
 
 });
