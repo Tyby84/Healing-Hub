@@ -1,4 +1,4 @@
-import './outer';
+
 
 import Nav from './modules/Nav';
 
