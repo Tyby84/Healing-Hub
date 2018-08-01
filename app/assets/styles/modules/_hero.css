@@ -14,37 +14,76 @@
       @mixin bgeffect;
     }
 	
-	&__navi {
-		  padding: 2rem 0 1rem 1.5rem;
-		  opacity: 0;
-		  animation-name: fadeText;
-		  animation-delay: 3s;
-		  animation-duration: 2s;
-		  animation-fill-mode: forwards;
-		  animation-timing-function: ease-in-out;
+	
+.menu-bar {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 1.5rem;
+		left: 1.5rem;
+		z-index: 20;
+		cursor: pointer;
+		transition: transform .3s ease-out;
+		animation: barUp 2s ease-out 1s;
+		animation-fill-mode: backwards;
+		 
+	&:hover {
+		transform: scale(.9);
+	}
 		
-		.fa-chevron-right {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			transform: rotate(0deg);
-			width: 1.2rem;
-			height: 1.2rem;
-			border-radius: 50%;
-			font-size: 1.3rem;
-			color: #cccccc;
-			cursor: pointer;
-			transition: all .5s ease-out;
-			transform-origin: center center;
+		&::before {
+			content: "";
+			position: absolute;
+			top:8px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .1s ease-out;
 			
-			&--turn{
-				transform: rotate(180deg);
-			}
-			
-			&:hover {
-				color: #fff;
-			}
 		}
+		&--bar{
+			
+			position: absolute;
+			top:0px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .1s ease-out;
+	}
+			
+			&::after {
+			content: "";
+			position: absolute;
+			top:16px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+				transition: all .1s ease-out;
+			}
+			
+		
+	&--close {
+		&::before {
+			
+				transform: rotate(-45deg);
+				top: 5px;
+				background-color: #fff;
+			}
+		.menu-bar--bar {
+			
+			transform: rotate(45deg);
+			top: 5px;
+			background-color: #fff;
+		}
+		&::after {
+				opacity: 0;
+			}
+		
+	}
+	
 	}
 
    &__text{
@@ -100,4 +139,16 @@
 	100%{
 		opacity: 1;
 	}
+}
+@keyframes barUp {
+	0% {
+		opacity: 0;
+		transform: rotate(720deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+	
+	
 }

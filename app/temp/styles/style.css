@@ -422,45 +422,83 @@ a{
 }
 	}
 
-.hero__navi {
-		  padding: 2rem 0 1rem 1.5rem;
-		  opacity: 0;
-		  -webkit-animation-name: fadeText;
-		          animation-name: fadeText;
-		  -webkit-animation-delay: 3s;
-		          animation-delay: 3s;
-		  -webkit-animation-duration: 2s;
-		          animation-duration: 2s;
-		  -webkit-animation-fill-mode: forwards;
-		          animation-fill-mode: forwards;
-		  -webkit-animation-timing-function: ease-in-out;
-		          animation-timing-function: ease-in-out;
+.hero .menu-bar {
+		width: 20px;
+		height: 20px;
+		position: absolute;
+		top: 1.5rem;
+		left: 1.5rem;
+		z-index: 20;
+		cursor: pointer;
+		transition: -webkit-transform .3s ease-out;
+		transition: transform .3s ease-out;
+		transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+		-webkit-animation: barUp 2s ease-out 1s;
+		        animation: barUp 2s ease-out 1s;
+		-webkit-animation-fill-mode: backwards;
+		        animation-fill-mode: backwards;
+	
 	}
 
-.hero__navi .fa-chevron-right {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			-webkit-transform: rotate(0deg);
-			        transform: rotate(0deg);
-			width: 1.2rem;
-			height: 1.2rem;
-			border-radius: 50%;
-			font-size: 1.3rem;
-			color: #cccccc;
-			cursor: pointer;
-			transition: all .5s ease-out;
-			-webkit-transform-origin: center center;
-			        transform-origin: center center;
+.hero .menu-bar:hover {
+		-webkit-transform: scale(.9);
+		        transform: scale(.9);
+	}
+
+.hero .menu-bar::before {
+			content: "";
+			position: absolute;
+			top:8px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .1s ease-out;
+			
 		}
 
-.hero__navi .fa-chevron-right--turn{
-				-webkit-transform: rotate(180deg);
-				        transform: rotate(180deg);
+.hero .menu-bar--bar{
+			
+			position: absolute;
+			top:0px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+			transition: all .1s ease-out;
+	}
+
+.hero .menu-bar::after {
+			content: "";
+			position: absolute;
+			top:16px;
+			left:0;
+			width: 20px;
+			height: 3px;
+			background-color: #fff;
+				transition: all .1s ease-out;
 			}
 
-.hero__navi .fa-chevron-right:hover {
-				color: #fff;
+.hero .menu-bar--close::before {
+			
+				-webkit-transform: rotate(-45deg);
+			
+				        transform: rotate(-45deg);
+				top: 5px;
+				background-color: #fff;
+			}
+
+.hero .menu-bar--close .menu-bar--bar {
+			
+			-webkit-transform: rotate(45deg);
+			
+			        transform: rotate(45deg);
+			top: 5px;
+			background-color: #fff;
+		}
+
+.hero .menu-bar--close::after {
+				opacity: 0;
 			}
 
 .hero__text{
@@ -541,6 +579,36 @@ a{
 	}
 }
 
+@-webkit-keyframes barUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(720deg) scale(0);
+		        transform: rotate(720deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(0) scale(1);
+		        transform: rotate(0) scale(1);
+	}
+	
+	
+}
+
+@keyframes barUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: rotate(720deg) scale(0);
+		        transform: rotate(720deg) scale(0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: rotate(0) scale(1);
+		        transform: rotate(0) scale(1);
+	}
+	
+	
+}
+
 .mainNav {
 	/*animation-name: fadeNav;
 	animation-delay: 3s;
@@ -611,10 +679,8 @@ a{
 	height: 1.2rem;
 	color: #fff;
 	position: absolute;
-	top: 80vh;
+	top: 60vh;
 	left: 50vw;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
 	padding: 1.2rem;
 	border: 2px solid #eee;
 	border-radius: 50%;
@@ -623,40 +689,46 @@ a{
 @media (min-width: 850px) {
 
 .arrdown {
-	opacity: 0;
+	
 	-webkit-animation-name: arrow;
+	
 	        animation-name: arrow;
-	-webkit-animation-delay: 3s;
-	        animation-delay: 3s;
-	-webkit-animation-duration: 4s;
-	        animation-duration: 4s;
-	-webkit-animation-direction:normal;
-	        animation-direction:normal;
-	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+	-webkit-animation-duration: 3s;
+	        animation-duration: 3s;
+	animation-direction:reverse;
+	-webkit-animation-fill-mode:backwards;
+	        animation-fill-mode:backwards;
 	-webkit-animation-timing-function: ease-in-out;
 	        animation-timing-function: ease-in-out;
-	-webkit-animation-iteration-count: 1;
-	        animation-iteration-count: 1
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite
 }
 	}
 
 @-webkit-keyframes arrow {
-	
-	
-	100%{
-		opacity: 1;
-		
+	0%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
+	100% {
+		-webkit-transform: translateY(10px);
+		        transform: translateY(10px);
+	}
+	
 }
 
 @keyframes arrow {
-	
-	
-	100%{
-		opacity: 1;
-		
+	0%{
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
 	}
+	100% {
+		-webkit-transform: translateY(10px);
+		        transform: translateY(10px);
+	}
+	
 }
 
 .fa-angle-down {

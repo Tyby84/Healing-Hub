@@ -7,7 +7,7 @@ class Nav {
  	constructor() {
  		this.navItems = $('.mainNav a, #arrow-link');
 		this.navList = $('.mainNav__ul');
-		this.menu = $('.fa-chevron-right');
+		this.menu = $('.menu-bar');
 		this.naviToggle();
 		this.smoothing();
  	}
@@ -24,7 +24,7 @@ class Nav {
 	naviToggle() {
 		var that = this;
 		this.menu.click(function() {			that.navList.toggleClass('mainNav__ul--active');
-		that.menu.toggleClass('fa-chevron-right--turn');
+		that.menu.toggleClass('menu-bar--close');
 		
 		});
 	}

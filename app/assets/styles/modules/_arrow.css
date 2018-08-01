@@ -3,31 +3,33 @@
 	height: 1.2rem;
 	color: #fff;
 	position: absolute;
-	top: 80vh;
+	top: 60vh;
 	left: 50vw;
-	transform: translateX(-50%);
 	padding: 1.2rem;
 	border: 2px solid #eee;
 	border-radius: 50%;
 	@mixin medium{
-	opacity: 0;
+	
 	animation-name: arrow;
-	animation-delay: 3s;
-	animation-duration: 4s;
-	animation-direction:normal;
-	animation-fill-mode: forwards;
+	animation-delay: 1s;
+	animation-duration: 3s;
+	animation-direction:reverse;
+	animation-fill-mode:backwards;
 	animation-timing-function: ease-in-out;
-	animation-iteration-count: 1;
+	animation-iteration-count: infinite;
 	}
 }
+
 @keyframes arrow {
-	
-	
-	100%{
-		opacity: 1;
-		
+	0%{
+		transform: translateY(0);
 	}
+	100% {
+		transform: translateY(10px);
+	}
+	
 }
+
 .fa-angle-down {
 	position: absolute;
 	top: 50%;

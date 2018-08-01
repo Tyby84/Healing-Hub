@@ -10441,9 +10441,7 @@ return jQuery;
 "use strict";
 
 
-__webpack_require__(2);
-
-var _Nav = __webpack_require__(3);
+var _Nav = __webpack_require__(2);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -10453,43 +10451,6 @@ var navigation = new _Nav2.default();
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _jquery2.default)(document).ready(function () {
-
-	_jquery2.default.getJSON('../../assets/json/prices.json', function (data) {
-
-		var min60 = data["60min"];
-		var min90 = data["90min"];
-		var min120 = data["120min"];
-
-		(0, _jquery2.default)('span.60min').append(min60);
-		(0, _jquery2.default)('span.90min').append(min90);
-		(0, _jquery2.default)('span.120min').append(min120);
-	});
-
-	//Loading massage types
-	(0, _jquery2.default)('.mastypes__box').click(function () {
-		(0, _jquery2.default)('.mastypes__box').removeClass('mastypes--active');
-
-		(0, _jquery2.default)(this).addClass('mastypes--active');
-		var box = (0, _jquery2.default)(this).attr('id');
-		//console.log(box);
-		(0, _jquery2.default)('.mastypes__inload__par').load('../../assets/txt/' + box + '.txt').hide().fadeTo(1000, 1);
-	});
-});
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10505,7 +10466,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _jquerySmoothScroll = __webpack_require__(4);
+var _jquerySmoothScroll = __webpack_require__(3);
 
 var _jquerySmoothScroll2 = _interopRequireDefault(_jquerySmoothScroll);
 
@@ -10519,7 +10480,7 @@ var Nav = function () {
 
 		this.navItems = (0, _jquery2.default)('.mainNav a, #arrow-link');
 		this.navList = (0, _jquery2.default)('.mainNav__ul');
-		this.menu = (0, _jquery2.default)('.fa-chevron-right');
+		this.menu = (0, _jquery2.default)('.menu-bar');
 		this.naviToggle();
 		this.smoothing();
 	}
@@ -10540,7 +10501,7 @@ var Nav = function () {
 			var that = this;
 			this.menu.click(function () {
 				that.navList.toggleClass('mainNav__ul--active');
-				that.menu.toggleClass('fa-chevron-right--turn');
+				that.menu.toggleClass('menu-bar--close');
 			});
 		}
 	}]);
@@ -10551,7 +10512,7 @@ var Nav = function () {
 exports.default = Nav;
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
