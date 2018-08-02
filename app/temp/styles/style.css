@@ -344,7 +344,8 @@ template {
 * {box-sizing: border-box;}
 
 body{
-    background-color: #222;
+    background-color: #eee;
+	padding: .5rem;
 }
 
 img {
@@ -418,6 +419,7 @@ a{
       background: url('../../assets/images/spa-1920x1280.jpg') center center no-repeat;
       background-color: rgba(0,0,0,.6);
       background-blend-mode: overlay
+		/*clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);*/
 
 }
 	}
@@ -690,9 +692,9 @@ a{
 
 .arrdown {
 	
-	-webkit-animation-name: arrow;
+	-webkit-animation-name: arro;
 	
-	        animation-name: arrow;
+	        animation-name: arro;
 	-webkit-animation-delay: 1s;
 	        animation-delay: 1s;
 	-webkit-animation-duration: 3s;
@@ -886,8 +888,11 @@ a{
 .prices{
 		background: url('../../assets/images/shells1920x1280.jpg') center top no-repeat;
 		background-size: cover;
-	background-color: rgba(0,0,0,.6);
-	background-blend-mode: overlay
+		height: 100vh;
+		background-color: rgba(0,0,0,.6);
+		background-blend-mode: overlay;
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+		        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%)
 }
 	}
 
@@ -1236,6 +1241,7 @@ a{
 	text-align: center;
 	color: #fff;
 	position: relative;
+	background-color: #222;
 }
 
 .footer p{

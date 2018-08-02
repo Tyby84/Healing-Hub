@@ -14,7 +14,9 @@
 	@mixin large{
 		background: url('../../assets/images/shells1920x1280.jpg') center top no-repeat;
 		background-size: cover;
-	@mixin bgeffect;
+		height: 100vh;
+		@mixin bgeffect;
+		clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 	}
 	
 	

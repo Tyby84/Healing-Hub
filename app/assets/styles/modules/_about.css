@@ -16,6 +16,7 @@
 	background: url('../../assets/images/beac1920x1280.jpg') center 30% no-repeat;
 	background-size: cover;
 	@mixin bgeffect-light;
+		
 	}
 	
 	

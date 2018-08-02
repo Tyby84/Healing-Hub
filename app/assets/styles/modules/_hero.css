@@ -12,6 +12,7 @@
     @mixin large {
       background: url('../../assets/images/spa-1920x1280.jpg') center center no-repeat;
       @mixin bgeffect;
+		/*clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);*/
     }
 	
 	
